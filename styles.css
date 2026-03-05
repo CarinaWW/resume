@@ -39,7 +39,7 @@ body {
 .section {
   width: min(1040px, calc(100% - 2.2rem));
   margin: 0 auto;
-  padding: 1.45rem 0;
+  padding: 1.9rem 0;
 }
 
 .hero {
@@ -143,7 +143,7 @@ h1 {
 }
 
 .card {
-  padding: 1.28rem 1.35rem;
+  padding: 1.5rem 1.55rem;
 }
 
 .card p {
@@ -238,6 +238,20 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.92);
 }
 
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stack-item h3 {
+  margin: 0 0 0.4rem;
+}
+
+.stack-item .tags {
+  margin-top: 0;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -309,7 +323,8 @@ h1 {
 @media (max-width: 880px) {
   .hero-cards,
   .skills-grid,
-  .profile-grid {
+  .profile-grid,
+  .stack-grid {
     grid-template-columns: 1fr;
   }
 
